@@ -95,6 +95,21 @@ export const projects = [
     github: 'https://github.com/khuc-choudhary/ai-mock-interview-platform',
     demo: 'https://mockinterview-web.onrender.com',
   },
+  {
+    title: 'Faculty Feedback System',
+    tagline: 'Student Feedback & Analytics Portal',
+    description:
+      'A web application for colleges to collect anonymous student feedback on faculty and turn it into clear reports, with separate dashboards for Admin, Student and Faculty.',
+    highlights: [
+      'Students rate each faculty on 8 criteria (1–5) with optional comments, one submission per subject',
+      'Admin manages faculty, subjects and students, with bulk student import from Excel/CSV',
+      'Subject-wise and faculty-wise reports with a full Excel export; faculty see only their own anonymous results',
+    ],
+    tech: ['Python', 'Flask', 'SQLAlchemy', 'SQLite', 'Pandas', 'Jinja2', 'JavaScript'],
+    icon: 'ClipboardCheck',
+    github: '', // add the GitHub repo link here after pushing the code
+    demo: '', // add the live URL here after deploying
+  },
 ]
 
 export const education = [

@@ -60,15 +60,22 @@ export default function Projects() {
                     ))}
                   </ul>
                   <div className="mt-6 flex flex-wrap gap-3">
-                    <a href={p.github} target="_blank" rel="noopener noreferrer" className="btn-ghost group/b !px-5 !py-2.5">
-                      <GithubIcon width={16} height={16} /> GitHub
-                      <ArrowUpRight size={14} className="transition-transform duration-300 group-hover/b:-translate-y-0.5 group-hover/b:translate-x-0.5" />
-                    </a>
+                    {p.github && (
+                      <a href={p.github} target="_blank" rel="noopener noreferrer" className="btn-ghost group/b !px-5 !py-2.5">
+                        <GithubIcon width={16} height={16} /> GitHub
+                        <ArrowUpRight size={14} className="transition-transform duration-300 group-hover/b:-translate-y-0.5 group-hover/b:translate-x-0.5" />
+                      </a>
+                    )}
                     {p.demo && (
                       <a href={p.demo} target="_blank" rel="noopener noreferrer" className="btn-primary group/b !px-5 !py-2.5">
                         <ExternalLink size={16} /> Live Demo
                         <ArrowUpRight size={14} className="transition-transform duration-300 group-hover/b:-translate-y-0.5 group-hover/b:translate-x-0.5" />
                       </a>
+                    )}
+                    {!p.github && !p.demo && (
+                      <span className="inline-flex items-center gap-2 rounded-full border border-lav-soft bg-lav-light px-4 py-2 font-mono text-xs text-primary">
+                        <span className="h-1.5 w-1.5 rounded-full bg-sage" /> Live demo coming soon
+                      </span>
                     )}
                   </div>
                   {p.placeholder && (
