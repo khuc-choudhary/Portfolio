@@ -79,6 +79,22 @@ export const projects = [
     github: 'https://github.com/khuc-choudhary/Full-Flash-AI-Powered-Job-Hunting-Portal',
     demo: 'https://full-flash-ai-powered-job-hunting-p.vercel.app',
   },
+  {
+    title: 'InterviewAI',
+    tagline: 'AI Mock Interview Platform',
+    description:
+      'A full-stack mock interview platform where an AI interviewer asks role-based questions, listens to your spoken or typed answers, evaluates each one and generates a detailed performance report.',
+    highlights: [
+      'Voice interviews with speech-to-text, a talking AI interviewer and follow-up questions from your full answer history',
+      'Scores every answer on 9 criteria plus pace, pauses and filler words from your real microphone audio',
+      'Downloadable PDF reports, progress analytics and secure JWT auth on a PostgreSQL database',
+    ],
+    tech: ['React', 'TypeScript', 'Python', 'FastAPI', 'PostgreSQL', 'LLM API', 'Web Speech API'],
+    icon: 'Mic',
+    gradient: 'from-violet-500/40 to-fuchsia-500/10',
+    github: 'https://github.com/khuc-choudhary/ai-mock-interview-platform',
+    demo: 'https://mockinterview-web.onrender.com',
+  },
 ]
 
 export const education = [

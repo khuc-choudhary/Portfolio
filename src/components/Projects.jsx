@@ -64,10 +64,12 @@ export default function Projects() {
                       <GithubIcon width={16} height={16} /> GitHub
                       <ArrowUpRight size={14} className="transition-transform duration-300 group-hover/b:-translate-y-0.5 group-hover/b:translate-x-0.5" />
                     </a>
-                    <a href={p.demo} target="_blank" rel="noopener noreferrer" className="btn-primary group/b !px-5 !py-2.5">
-                      <ExternalLink size={16} /> Live Demo
-                      <ArrowUpRight size={14} className="transition-transform duration-300 group-hover/b:-translate-y-0.5 group-hover/b:translate-x-0.5" />
-                    </a>
+                    {p.demo && (
+                      <a href={p.demo} target="_blank" rel="noopener noreferrer" className="btn-primary group/b !px-5 !py-2.5">
+                        <ExternalLink size={16} /> Live Demo
+                        <ArrowUpRight size={14} className="transition-transform duration-300 group-hover/b:-translate-y-0.5 group-hover/b:translate-x-0.5" />
+                      </a>
+                    )}
                   </div>
                   {p.placeholder && (
                     <p className="mt-4 flex items-center gap-1.5 text-xs text-amber-600">
