@@ -125,6 +125,21 @@ export const projects = [
     github: 'https://github.com/khuc-choudhary/rewear',
     demo: 'https://rewear-murex-eight.vercel.app',
   },
+  {
+    title: 'ShiftLogix',
+    tagline: 'Packers & Movers Website + Admin Portal',
+    description:
+      'A full website for a packers and movers business: a public site where customers can explore services and send a move enquiry, plus a secure admin portal to create quotations and bills and track the business.',
+    highlights: [
+      'Quotation and bill builder with a live preview, digital signature and clean PDF export',
+      'Share PDFs on WhatsApp or email, and search, filter or re-download saved records',
+      'Analytics dashboard with revenue, bookings and destination-wise charts, behind a secure JWT login',
+    ],
+    tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'jsPDF', 'Recharts', 'JWT (jose)'],
+    icon: 'Truck',
+    github: 'https://github.com/khuc-choudhary/shiftlogix',
+    demo: 'https://shiftlogix-zeta.vercel.app',
+  },
 ]
 
 export const education = [
