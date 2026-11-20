@@ -107,8 +107,8 @@ export const projects = [
     ],
     tech: ['Python', 'Flask', 'SQLAlchemy', 'SQLite', 'Pandas', 'Jinja2', 'JavaScript'],
     icon: 'ClipboardCheck',
-    github: '', // add the GitHub repo link here after pushing the code
-    demo: '', // add the live URL here after deploying
+    github: 'https://github.com/khuc-choudhary/Faculty-Feedback',
+    demo: 'https://faculty-feedback-system-pvgb.onrender.com',
   },
 ]
 
