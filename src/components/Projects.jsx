@@ -1,5 +1,5 @@
 import { ArrowUpRight, Check, ExternalLink, Info } from 'lucide-react'
-import { projects } from '../data/content'
+import { contact, projects } from '../data/content'
 import { GithubIcon } from './BrandIcons'
 import Icon from './Icon'
 import Reveal, { SectionHeading } from './Reveal'
@@ -60,21 +60,24 @@ export default function Projects() {
                     ))}
                   </ul>
                   <div className="mt-6 flex flex-wrap gap-3">
-                    {p.github && (
-                      <a href={p.github} target="_blank" rel="noopener noreferrer" className="btn-ghost group/b !px-5 !py-2.5">
-                        <GithubIcon width={16} height={16} /> GitHub
-                        <ArrowUpRight size={14} className="transition-transform duration-300 group-hover/b:-translate-y-0.5 group-hover/b:translate-x-0.5" />
-                      </a>
-                    )}
-                    {p.demo && (
+                    {/* No repo link yet → falls back to the GitHub profile */}
+                    <a href={p.github || contact.github.url} target="_blank" rel="noopener noreferrer" className="btn-ghost group/b !px-5 !py-2.5">
+                      <GithubIcon width={16} height={16} /> GitHub
+                      <ArrowUpRight size={14} className="transition-transform duration-300 group-hover/b:-translate-y-0.5 group-hover/b:translate-x-0.5" />
+                    </a>
+                    {p.demo ? (
                       <a href={p.demo} target="_blank" rel="noopener noreferrer" className="btn-primary group/b !px-5 !py-2.5">
                         <ExternalLink size={16} /> Live Demo
                         <ArrowUpRight size={14} className="transition-transform duration-300 group-hover/b:-translate-y-0.5 group-hover/b:translate-x-0.5" />
                       </a>
-                    )}
-                    {!p.github && !p.demo && (
-                      <span className="inline-flex items-center gap-2 rounded-full border border-lav-soft bg-lav-light px-4 py-2 font-mono text-xs text-primary">
-                        <span className="h-1.5 w-1.5 rounded-full bg-sage" /> Live demo coming soon
+                    ) : (
+                      <span
+                        className="btn-primary !cursor-not-allowed !px-5 !py-2.5 opacity-60 hover:!shadow-lg hover:!brightness-100"
+                        title="Live demo coming soon"
+                        aria-disabled="true"
+                      >
+                        <ExternalLink size={16} /> Live Demo
+                        <span className="rounded-full bg-white/20 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider">Soon</span>
                       </span>
                     )}
                   </div>
