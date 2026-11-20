@@ -6,6 +6,8 @@ import Reveal, { SectionHeading } from './Reveal'
 
 // Bento rhythm: wide / narrow, then narrow / wide, repeating.
 const span = (i) => (['lg:col-span-7', 'lg:col-span-5', 'lg:col-span-5', 'lg:col-span-7'][i % 4])
+// An odd last card gets the full row so there is no empty gap beside it.
+const isLoneLast = (i) => projects.length % 2 === 1 && i === projects.length - 1
 
 export default function Projects() {
   return (
@@ -17,11 +19,11 @@ export default function Projects() {
       />
       <div className="grid gap-6 lg:grid-cols-12">
         {projects.map((p, i) => (
-          <Reveal key={p.title} delay={(i % 2) * 0.12} className={span(i)}>
+          <Reveal key={p.title} delay={(i % 2) * 0.12} className={isLoneLast(i) ? 'lg:col-span-12' : span(i)}>
             <article className="group relative h-full rounded-[1.75rem] bg-gradient-to-br from-lav-soft/70 via-white to-lavender/40 p-px transition duration-500 hover:-translate-y-2 hover:from-primary hover:via-lavender hover:to-primary/60 hover:shadow-glow">
               <div className="flex h-full flex-col overflow-hidden rounded-[calc(1.75rem-1px)] bg-white">
                 {/* consistent 16:9 visual panel */}
-                <div className="relative aspect-[16/9] overflow-hidden bg-gradient-to-br from-lav-light via-lav-soft to-lavender">
+                <div className={`relative aspect-[16/9] ${isLoneLast(i) ? 'lg:aspect-[3/1]' : ''} overflow-hidden bg-gradient-to-br from-lav-light via-lav-soft to-lavender`}>
                   <div className="absolute inset-0 transition duration-700 group-hover:scale-110">
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_20%,rgba(255,255,255,.75),transparent_55%)]" />
                     <div className="absolute inset-0 bg-[linear-gradient(rgba(94,58,77,.08)_1px,transparent_1px),linear-gradient(90deg,rgba(94,58,77,.08)_1px,transparent_1px)] bg-[size:28px_28px]" />

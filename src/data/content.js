@@ -110,6 +110,21 @@ export const projects = [
     github: 'https://github.com/khuc-choudhary/Faculty-Feedback',
     demo: 'https://faculty-feedback-system-pvgb.onrender.com',
   },
+  {
+    title: 'ReWear',
+    tagline: 'Resell · Swap · Donate Pre-loved Clothes',
+    description:
+      'A sustainable fashion marketplace where people give their clothes a second life: sell them, swap them with others, or donate them for free, built for the Indian context with ₹ pricing and city-wise listings.',
+    highlights: [
+      'Explore page with Resell / Swap / Donate tabs, filters by category, size, condition, city and price',
+      'Tinder-style swipe cards to find swap matches, plus a 5-step listing flow with suggested pricing',
+      'Google sign-in, realtime chat between users and a dashboard with an eco-impact meter, via Supabase',
+    ],
+    tech: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'Supabase', 'Framer Motion', 'GSAP'],
+    icon: 'Shirt',
+    github: 'https://github.com/khuc-choudhary/rewear',
+    demo: 'https://rewear-murex-eight.vercel.app',
+  },
 ]
 
 export const education = [
