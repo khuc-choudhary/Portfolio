@@ -4,12 +4,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#7950E8',
-        lavender: '#B69CFF',
-        'lav-light': '#EDE5FF',
-        'lav-soft': '#D9C8FF',
-        canvas: '#FAF9FF',
-        ink: '#211B3A',
+        // Palette: Plum Velvet · Rosewood · Vanilla Cream · Sage Leaf · Lavender Sky
+        primary: '#5E3A4D',     // Plum Velvet
+        lavender: '#C77486',    // Rosewood (kept old token name so all components follow)
+        'lav-light': '#F8ECE4', // light Vanilla Cream tint
+        'lav-soft': '#EBD5C8',  // deeper Vanilla Cream for borders
+        canvas: '#FCF7F2',      // page background
+        ink: '#2E1E27',         // text
+        cream: '#F4E1D2',       // Vanilla Cream
+        sage: '#A8B89A',        // Sage Leaf
+        periwinkle: '#A7B0D6',  // Lavender Sky
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
@@ -17,8 +21,8 @@ export default {
         mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
       },
       boxShadow: {
-        soft: '0 10px 40px -12px rgba(121, 80, 232, 0.18)',
-        glow: '0 20px 60px -10px rgba(121, 80, 232, 0.45)',
+        soft: '0 10px 40px -12px rgba(94, 58, 77, 0.16)',
+        glow: '0 20px 60px -10px rgba(94, 58, 77, 0.38)',
       },
       keyframes: {
         float: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-12px)' } },

@@ -5,11 +5,11 @@
 html { scroll-behavior: smooth; }
 body { @apply bg-canvas text-ink font-sans antialiased; overflow-x: hidden; }
 section[id] { scroll-margin-top: 6rem; }
-::selection { background: rgba(121, 80, 232, 0.3); color: #211B3A; }
+::selection { background: rgba(199, 116, 134, 0.3); color: #2E1E27; }
 
 @layer components {
   .gradient-text {
-    @apply bg-gradient-to-r from-primary via-[#9a78ff] to-lavender bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary via-[#9B5670] to-lavender bg-clip-text text-transparent;
     background-size: 200% auto;
   }
   .glass { @apply border border-white/70 bg-white/60 backdrop-blur-xl; }
@@ -17,7 +17,7 @@ section[id] { scroll-margin-top: 6rem; }
     @apply rounded-3xl border border-lav-soft/60 bg-white shadow-soft transition duration-300;
   }
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-primary to-[#9a78ff] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/30 transition duration-300 hover:shadow-glow hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary;
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-primary to-[#8A4D66] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/30 transition duration-300 hover:shadow-glow hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary;
   }
   .btn-ghost {
     @apply inline-flex items-center justify-center gap-2 rounded-full border border-lav-soft bg-white px-6 py-3 text-sm font-semibold text-primary transition duration-300 hover:border-primary/50 hover:bg-lav-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary;
@@ -27,7 +27,7 @@ section[id] { scroll-margin-top: 6rem; }
 
 /* soft dotted texture used behind sections */
 .dots-bg {
-  background-image: radial-gradient(rgba(121, 80, 232, 0.14) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(94, 58, 77, 0.12) 1px, transparent 1px);
   background-size: 22px 22px;
 }
 

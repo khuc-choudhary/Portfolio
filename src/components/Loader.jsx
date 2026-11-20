@@ -22,9 +22,9 @@ export default function Loader() {
         >
           <div className="relative grid h-28 w-28 place-items-center">
             <svg className="absolute inset-0 -rotate-90" viewBox="0 0 100 100">
-              <circle cx="50" cy="50" r="46" fill="none" stroke="#EDE5FF" strokeWidth="3" />
+              <circle cx="50" cy="50" r="46" fill="none" stroke="#F4E1D2" strokeWidth="3" />
               <motion.circle
-                cx="50" cy="50" r="46" fill="none" stroke="#7950E8" strokeWidth="3" strokeLinecap="round"
+                cx="50" cy="50" r="46" fill="none" stroke="#5E3A4D" strokeWidth="3" strokeLinecap="round"
                 initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1, ease: 'easeInOut' }}
               />
             </svg>

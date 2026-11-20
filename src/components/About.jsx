@@ -27,16 +27,16 @@ function NeuralBrain() {
   }, [])
 
   return (
-    <div className="relative h-full min-h-[22rem] overflow-hidden rounded-3xl bg-gradient-to-br from-primary via-[#8b66f0] to-lavender p-1 shadow-glow">
-      <div className="relative grid h-full place-items-center overflow-hidden rounded-[1.4rem] bg-gradient-to-br from-[#2a1f55] via-[#3b2a7c] to-[#5a3fc0]">
-        <div className="absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lavender/40 blur-3xl" />
+    <div className="relative h-full min-h-[22rem] overflow-hidden rounded-3xl bg-gradient-to-br from-primary via-lavender to-periwinkle p-1 shadow-glow">
+      <div className="relative grid h-full place-items-center overflow-hidden rounded-[1.4rem] bg-gradient-to-br from-[#2E1E27] via-[#4A2D3D] to-[#6E4359]">
+        <div className="absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-periwinkle/30 blur-3xl" />
         <svg viewBox="0 0 400 260" className="relative w-full" role="img" aria-label="Illustration of a glowing neural network">
           <defs>
-            <radialGradient id="nodeGlow"><stop offset="0%" stopColor="#fff" /><stop offset="100%" stopColor="#B69CFF" /></radialGradient>
+            <radialGradient id="nodeGlow"><stop offset="0%" stopColor="#fff" /><stop offset="100%" stopColor="#A7B0D6" /></radialGradient>
           </defs>
           {edges.map(([a, b], i) => (
             <motion.line
-              key={i} x1={a.x} y1={a.y} x2={b.x} y2={b.y} stroke="#D9C8FF" strokeWidth="1"
+              key={i} x1={a.x} y1={a.y} x2={b.x} y2={b.y} stroke="#F4E1D2" strokeWidth="1"
               initial={{ pathLength: 0, opacity: 0 }}
               whileInView={{ pathLength: 1, opacity: 0.4 }}
               viewport={{ once: true }}
@@ -45,7 +45,7 @@ function NeuralBrain() {
           ))}
           {nodes.map((n, i) => (
             <g key={i}>
-              <circle cx={n.x} cy={n.y} r="9" fill="#B69CFF" opacity=".25" className="animate-pulse-node" style={{ transformOrigin: `${n.x}px ${n.y}px`, animationDelay: `${(i % 7) * 0.4}s` }} />
+              <circle cx={n.x} cy={n.y} r="9" fill="#A8B89A" opacity=".3" className="animate-pulse-node" style={{ transformOrigin: `${n.x}px ${n.y}px`, animationDelay: `${(i % 7) * 0.4}s` }} />
               <circle cx={n.x} cy={n.y} r="4.5" fill="url(#nodeGlow)" />
             </g>
           ))}

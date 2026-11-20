@@ -31,21 +31,21 @@ function useTyping(phrases) {
 // Isometric 3D cube drawn in SVG
 const Cube = ({ size = 44 }) => (
   <svg width={size} height={size} viewBox="0 0 48 48" aria-hidden="true">
-    <path d="M24 4 42 14v20L24 44 6 34V14Z" fill="#EDE5FF" stroke="#7950E8" strokeWidth="1.5" strokeLinejoin="round" />
-    <path d="M24 24 6 14M24 24l18-10M24 24v20" stroke="#7950E8" strokeWidth="1.5" />
-    <path d="M24 24 6 14 24 4l18 10Z" fill="#B69CFF" opacity=".55" />
+    <path d="M24 4 42 14v20L24 44 6 34V14Z" fill="#F4E1D2" stroke="#5E3A4D" strokeWidth="1.5" strokeLinejoin="round" />
+    <path d="M24 24 6 14M24 24l18-10M24 24v20" stroke="#5E3A4D" strokeWidth="1.5" />
+    <path d="M24 24 6 14 24 4l18 10Z" fill="#C77486" opacity=".55" />
   </svg>
 )
 
 // Little neural-net motif
 const Net = () => (
   <svg width="74" height="60" viewBox="0 0 74 60" aria-hidden="true">
-    <g stroke="#B69CFF" strokeWidth="1.2">
+    <g stroke="#A8B89A" strokeWidth="1.2">
       {[8, 30, 52].map((y1) => [14, 30, 46].map((y2) => <line key={`${y1}-${y2}`} x1="10" y1={y1} x2="37" y2={y2} />))}
       {[14, 30, 46].map((y1) => [10, 30, 50].map((y2) => <line key={`b${y1}-${y2}`} x1="37" y1={y1} x2="64" y2={y2} />))}
     </g>
     {[[10, 8], [10, 30], [10, 52], [37, 14], [37, 30], [37, 46], [64, 10], [64, 30], [64, 50]].map(([x, y], k) => (
-      <circle key={k} cx={x} cy={y} r="4" fill={k % 2 ? '#B69CFF' : '#7950E8'} />
+      <circle key={k} cx={x} cy={y} r="4" fill={k % 2 ? '#C77486' : '#5E3A4D'} />
     ))}
   </svg>
 )

@@ -24,7 +24,7 @@ export default function Projects() {
                 <div className="relative aspect-[16/9] overflow-hidden bg-gradient-to-br from-lav-light via-lav-soft to-lavender">
                   <div className="absolute inset-0 transition duration-700 group-hover:scale-110">
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_20%,rgba(255,255,255,.75),transparent_55%)]" />
-                    <div className="absolute inset-0 bg-[linear-gradient(rgba(121,80,232,.10)_1px,transparent_1px),linear-gradient(90deg,rgba(121,80,232,.10)_1px,transparent_1px)] bg-[size:28px_28px]" />
+                    <div className="absolute inset-0 bg-[linear-gradient(rgba(94,58,77,.08)_1px,transparent_1px),linear-gradient(90deg,rgba(94,58,77,.08)_1px,transparent_1px)] bg-[size:28px_28px]" />
                     <div className="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-primary/25 blur-2xl" />
                     <div className="absolute left-1/2 top-1/2 h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-3xl bg-white/50 blur-sm" />
                     <span className="absolute left-1/2 top-1/2 grid h-20 w-20 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-3xl bg-white text-primary shadow-glow">
