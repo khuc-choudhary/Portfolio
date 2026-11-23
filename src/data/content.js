@@ -140,6 +140,21 @@ export const projects = [
     github: 'https://github.com/khuc-choudhary/shiftlogix',
     demo: 'https://shiftlogix-zeta.vercel.app',
   },
+  {
+    title: 'Reelora',
+    tagline: 'Netflix-style Streaming Website',
+    description:
+      'A full-stack streaming website inspired by Netflix where every film actually plays, streamed from public-domain movies on the Internet Archive, with accounts, profiles and a custom video player.',
+    highlights: [
+      'Sign up / sign in with hashed passwords and “Who’s watching?” profiles, including Kids profiles',
+      'Browse rows, Top 10, My List, search and a details popup with seasons and episodes',
+      'Custom player with resume-where-you-left, Next Episode auto-play, speed control and keyboard shortcuts',
+    ],
+    tech: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Node.js', 'Express'],
+    icon: 'Clapperboard',
+    github: 'https://github.com/khuc-choudhary/reelora',
+    demo: '', // add the live URL here after deploying
+  },
 ]
 
 export const education = [
