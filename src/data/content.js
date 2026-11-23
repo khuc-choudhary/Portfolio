@@ -155,6 +155,21 @@ export const projects = [
     github: 'https://github.com/khuc-choudhary/reelora',
     demo: 'https://reelora-ubsz.onrender.com',
   },
+  {
+    title: 'CareerPilot',
+    tagline: 'AI Career Development Platform',
+    description:
+      'An AI-powered career workspace for students and fresh graduates that takes you from current skills to skill gaps, a learning roadmap, interview practice and finally the job offer.',
+    highlights: [
+      'Resume Analyzer and Job Match: upload a resume or paste a job description to get scores, skill gaps and evidence-based suggestions',
+      'Personal learning roadmap paced to your weekly hours, plus AI interview practice with per-answer feedback and a final report',
+      'Kanban application tracker and an analytics dashboard, with secure Supabase auth and row-level security',
+    ],
+    tech: ['Next.js 16', 'React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'Zod', 'LLM API'],
+    icon: 'Compass',
+    github: 'https://github.com/khuc-choudhary/CareerPilot',
+    demo: '', // add the live URL here after deploying
+  },
 ]
 
 export const education = [
