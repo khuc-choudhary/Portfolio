@@ -153,7 +153,7 @@ export const projects = [
     tech: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Node.js', 'Express'],
     icon: 'Clapperboard',
     github: 'https://github.com/khuc-choudhary/reelora',
-    demo: '', // add the live URL here after deploying
+    demo: 'https://reelora-ubsz.onrender.com',
   },
 ]
 
