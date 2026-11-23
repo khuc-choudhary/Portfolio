@@ -50,10 +50,6 @@ function NeuralBrain() {
             </g>
           ))}
         </svg>
-        {[...Array(10)].map((_, i) => (
-          <span key={i} className="absolute animate-rise rounded-full bg-white/70"
-            style={{ left: `${8 + i * 9}%`, bottom: `${(i * 13) % 40}%`, width: 3, height: 3, animationDelay: `${i * 0.8}s` }} />
-        ))}
       </div>
     </div>
   )
